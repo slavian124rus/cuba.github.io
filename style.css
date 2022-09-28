@@ -1,0 +1,239 @@
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr ;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+
+}
+.header {
+    grid-area: header;
+    padding: 15px;
+    background-color: #5ab9ea;
+    display: grid;
+    align-items: center;
+    grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+}
+.header_logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    grid-column: 2 / 3;
+}
+.header_menu {
+    grid-column: 3 / 4;
+}
+.header_list {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: end;
+}
+.header_list li {
+    
+}
+.header_link {
+    color: black;
+    font-size: 16px;
+}
+.header_burger {
+}
+.main {
+    grid-area: main;
+    padding: 30px 15px;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 250px) minmax(auto, 1100px) 1fr;
+
+}
+.sidebar {
+    grid-column: 2 / 3;
+    background-color: #5680e9;
+    padding: 30px 15px;
+    
+}
+.sidebar_menu {
+}
+.sidebar_list {
+}
+.sidebar_list li {
+    margin: 0px 0px 15px 0px;
+}
+.sidebar_link {
+    font-size: 20px;
+    color: black;
+
+
+}
+.sidebar_form{
+    margin: 15px;
+    background-color: #84ceeb;
+}
+
+
+.sidebar_input{
+
+    background-color: #fff;
+    margin: 15px 5px 0px 5px;
+    border-radius: none ;
+
+}
+.sidebar_submit{
+margin: 10px 5px 10px 5px;
+text-transform: uppercase;
+border: none;
+padding: 5px;
+transition-duration: 0.5s;
+
+
+}
+
+
+
+.sidebar_submit:hover{
+    background-color: #5680e9;
+    transition-duration: 0.5s;
+    
+}
+
+.sidebar_form:focus{
+    box-shadow: #000;
+    
+}
+
+.content {
+    grid-column: 3 / 4;
+    padding: 0px 0px 0px 30px;
+}
+.content_title {
+}
+.content_hottur {
+}
+.hottur {
+}
+.hottur_title {
+}
+.hottur_items {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-flow: 1fr;
+}
+.hottur_item {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template: auto 1fr minmax(40px, auto) /1fr ;
+}
+.hottur_image_1{
+    position: relative;
+    padding: 0px 0px 90% 0px;
+    margin: 0px 0px 20px 0px;
+
+}
+.hottur_image_1 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.hottur_name {
+    font-size: 20px;
+    color: #000;
+    line-height: 24px;
+    margin: 0px 0px 20px 0px;
+}
+.hottur_button {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background-color: #5680e9;
+    padding: 0px 20px;
+    justify-self: start;
+    align-items: center;
+    transition-duration: 0.5s;
+
+}
+
+.hottur_button:hover{
+    font-size: 18px;
+background-color: aqua;
+    transition-duration: 0.5s;
+    
+
+}
+
+.content_about {
+    display: grid;
+    align-items: center;
+}
+.about {
+    
+}
+.about_title {
+    font-size: 28px;
+}
+.about_items { 
+    
+    
+}
+.about_item {
+    
+    
+
+    
+}
+.about_text {
+    font-size: 24px;
+    line-height: 30px;
+}
+.about_img {
+    
+    
+    
+}
+.about_img img {
+
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+    
+    
+}
+.content_contacts {
+}
+.contacts {
+}
+.contacts_title {
+    font-size: 28px;
+}
+.contacts_items {
+}
+.contacts_item {
+    font-size: 24px;
+    line-height: 30px;
+}
+.footer {
+    background-color: aqua;
+    display: grid;
+    grid-area: footer;
+    align-items: center;
+    grid-template: 1fr / 1fr minmax(auto,300px) minmax(auto, 1100px) 1fr ;
+
+}
+.footer_copy {
+    grid-column: 2/3;
+}
+.footer_text {
+    grid-column: 3/4;
+    
+}
